@@ -5,6 +5,14 @@ $bg_color_secondary: #f4f8ff;
 $txt_white: #fff;
 $txt_black: #000;
 $para_color: #b4c7e7;
+@font-face {
+  font-family: Cardo;
+  src: url("../assets/font/Cardo/Cardo-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Inter;
+  src: url("../assets/font/Inter/static/Inter-Regular.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +22,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter;
 }
 h1,
 h2,
@@ -22,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: serif;
+  font-family: Cardo;
   text-transform: capitalize;
 }
 section {
@@ -34,7 +42,7 @@ section {
   border: none;
   padding: 13px 33px;
   width: max-content;
-  font-family: serif;
+  font-family: Cardo;
   font-size: 19px;
   font-weight: 700;
   text-transform: capitalize;
@@ -58,6 +66,7 @@ section {
   position: relative;
   margin: 20px 0;
   text-transform: capitalize;
+  font-family: Cardo;
   &::after {
     display: block;
     content: "";
@@ -67,11 +76,11 @@ section {
   }
 }
 .paragraphe {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
-  color: $para_color;
+  color: #969aa0;
 }
 .rating {
   list-style: none;
@@ -194,6 +203,9 @@ section {
         width: 80%;
       }
     }
+  }
+  p.paragraphe {
+    color: $para_color;
   }
 }
 
@@ -338,6 +350,9 @@ section {
 .section5 {
   background: $color_primary;
   padding: 50px 10%;
+  p.paragraphe {
+    color: $para_color;
+  }
   &__content {
     //  border: 2px solid red;
     display: flex;
@@ -460,6 +475,7 @@ section {
       text-align: center;
       width: 25%;
       margin: 30px 0 0;
+      color: #969aa0;
       span {
         font-weight: 700;
         color: $txt_black;
@@ -485,6 +501,7 @@ section {
       justify-content: center;
       gap: 20px;
     }
+
     .review__icon {
       display: flex;
       align-items: center;
@@ -518,6 +535,9 @@ section {
           justify-content: space-between;
           align-items: center;
           gap: 20px;
+        }
+        p.paragraphe {
+          color: $para_color;
         }
       }
       .box2 {
@@ -629,7 +649,9 @@ section {
 .section11 {
   background: $color_primary;
   padding: 80px 10%;
-
+  p.paragraphe {
+    color: $para_color;
+  }
   &__content {
     display: flex;
     flex-direction: column;
