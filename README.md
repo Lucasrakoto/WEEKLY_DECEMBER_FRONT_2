@@ -1,3 +1,3 @@
-# WEEKLY DECEMBER FRONT 2 
+# WEEKLY DECEMBER FRONT 2
 
-# Integration d'une site web via une maquettte figma en utilisant HTML, CSS, Sass, Javascript 
+# Integration d'une site web à partir d'une maquettte figma en utilisant HTML,Sass (CSS)
